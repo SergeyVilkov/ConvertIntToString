@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CI8BzzgmqwY=",
+  "dgSpecHash": "ck79vkA+aCU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\anton\\source\\repos\\ConvertIntToString\\ConvertIntToStringTest\\ConvertIntToStringTest.csproj",
+  "projectFilePath": "C:\\Users\\anton\\OneDrive\\Рабочий стол\\ConvertIntToString\\ConvertIntToStringTest\\ConvertIntToStringTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anton\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iFEdkA9ivbU=",
+  "dgSpecHash": "isjjRYOU4E8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\anton\\source\\repos\\ConvertIntToString\\ConvertIntToString\\ConvertIntToString.csproj",
+  "projectFilePath": "C:\\Users\\anton\\OneDrive\\Рабочий стол\\ConvertIntToString\\ConvertIntToString\\ConvertIntToString.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anton\\.nuget\\packages\\nunit\\4.2.2\\nunit.4.2.2.nupkg.sha512"
   ],

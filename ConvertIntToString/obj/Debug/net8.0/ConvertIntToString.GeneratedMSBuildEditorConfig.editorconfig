@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ConvertIntToString
-build_property.ProjectDir = C:\Users\anton\source\repos\ConvertIntToString\ConvertIntToString\
+build_property.ProjectDir = C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

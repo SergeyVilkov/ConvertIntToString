@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConvertIntToStringTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccab507887657813847e447e73bb40adadde9485")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConvertIntToStringTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConvertIntToStringTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

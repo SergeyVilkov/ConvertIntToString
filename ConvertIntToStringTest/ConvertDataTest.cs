@@ -348,5 +348,17 @@ namespace ConvertIntToStringTest
             StringAssert.Contains
                 ("Введены некорректные входные данные (Параметр <Падеж>)", ex.Message);
         }
+
+        [Test]
+        public void CheckDigitCapacityNumber_NumberMoreOneTrillion_Throw()
+        {
+            var data = new ConvertData();
+            var oneTrillion = 1000000000000;
+
+            var ex = Assert.Catch<Exception>(() => data
+                .CheckDigitCapacityNumber(oneTrillion));
+
+            StringAssert.Contains("Допустимо число не более 999,999,999,999", ex.Message);
+        }
     }
 }

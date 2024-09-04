@@ -16,3 +16,22 @@ C:\Users\anton\source\repos\ConvertIntToString\ConvertIntToString\bin\Debug\net8
 C:\Users\anton\source\repos\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\nunit.framework.legacy.dll
 C:\Users\anton\source\repos\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.csproj.AssemblyReference.cache
 C:\Users\anton\source\repos\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertI.1847A13D.Up2Date
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\ConvertIntToString.exe
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\ConvertIntToString.deps.json
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\ConvertIntToString.runtimeconfig.json
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\ConvertIntToString.dll
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\ConvertIntToString.pdb
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.csproj.AssemblyReference.cache
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.AssemblyInfoInputs.cache
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.AssemblyInfo.cs
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.sourcelink.json
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertI.1847A13D.Up2Date
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.dll
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\refint\ConvertIntToString.dll
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.pdb
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ConvertIntToString.genruntimeconfig.cache
+C:\Users\anton\OneDrive\Рабочий стол\ConvertIntToString\ConvertIntToString\obj\Debug\net8.0\ref\ConvertIntToString.dll

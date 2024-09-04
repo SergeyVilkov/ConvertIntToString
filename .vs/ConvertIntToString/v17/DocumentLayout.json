@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anton\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ConvertIntToString\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F34E341E-39F7-4B23-B863-544363B26DC1}|ConvertIntToStringTest\\ConvertIntToStringTest.csproj|c:\\users\\anton\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\convertinttostring\\convertinttostringtest\\convertdatatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F34E341E-39F7-4B23-B863-544363B26DC1}|ConvertIntToStringTest\\ConvertIntToStringTest.csproj|solutionrelative:convertinttostringtest\\convertdatatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED496C8C-3022-4FC6-9425-41A30C239122}|ConvertIntToString\\ConvertIntToString.csproj|c:\\users\\anton\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\convertinttostring\\convertinttostring\\convertdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED496C8C-3022-4FC6-9425-41A30C239122}|ConvertIntToString\\ConvertIntToString.csproj|solutionrelative:convertinttostring\\convertdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED496C8C-3022-4FC6-9425-41A30C239122}|ConvertIntToString\\ConvertIntToString.csproj|c:\\users\\anton\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\convertinttostring\\convertinttostring\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED496C8C-3022-4FC6-9425-41A30C239122}|ConvertIntToString\\ConvertIntToString.csproj|solutionrelative:convertinttostring\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConvertDataTest.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ConvertIntToString\\ConvertIntToStringTest\\ConvertDataTest.cs",
+              "RelativeDocumentMoniker": "ConvertIntToStringTest\\ConvertDataTest.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ConvertIntToString\\ConvertIntToStringTest\\ConvertDataTest.cs",
+              "RelativeToolTip": "ConvertIntToStringTest\\ConvertDataTest.cs",
+              "ViewState": "AQIAAD8BAAAAAAAAAAAiwGQBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T20:18:28.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConvertData.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ConvertIntToString\\ConvertIntToString\\ConvertData.cs",
+              "RelativeDocumentMoniker": "ConvertIntToString\\ConvertData.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ConvertIntToString\\ConvertIntToString\\ConvertData.cs",
+              "RelativeToolTip": "ConvertIntToString\\ConvertData.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwC8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T20:10:38.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ConvertIntToString\\ConvertIntToString\\Program.cs",
+              "RelativeDocumentMoniker": "ConvertIntToString\\Program.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ConvertIntToString\\ConvertIntToString\\Program.cs",
+              "RelativeToolTip": "ConvertIntToString\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T19:51:10.414Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

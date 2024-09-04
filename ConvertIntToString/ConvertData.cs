@@ -14,6 +14,7 @@ namespace ConvertIntToString
 
         public string ConvertToString(long number, string sGender, string sCase)
         {
+            CheckDigitCapacityNumber(number);
             CheckForNullOrEmpty(sGender, sCase);
             CheckForCorrectData(sGender, sCase);
             DictionaryInitialization(sGender, sCase);
@@ -38,6 +39,13 @@ namespace ConvertIntToString
             }
 
             return Text;
+        }
+
+        public void CheckDigitCapacityNumber(long number)
+        {
+            var maxNumberAllowed = 999999999999;
+            if (number > maxNumberAllowed)
+                throw new Exception("Допустимо число не более 999,999,999,999");
         }
 
         public void CheckForNullOrEmpty(string sGender, string sCase)
