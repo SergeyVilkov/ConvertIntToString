@@ -12,7 +12,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.CheckZeroAndNegativeNumber(0, data.Case);
+            data.CheckZeroAndNegativeNumber(0);
 
             Assert.That(data.Text, Is.EqualTo("Ноль"));
         }
@@ -23,7 +23,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.CheckZeroAndNegativeNumber(-1, data.Case);
+            data.CheckZeroAndNegativeNumber(-1);
 
             Assert.That(data.Text, Is.EqualTo("Минус "));
         }
@@ -34,7 +34,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingThousands("1", data.Case);
+            data.EndingThousands("1");
 
             Assert.That(data.Text, Is.EqualTo("Одна Тысяча "));
         }
@@ -45,7 +45,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingThousands("2", data.Case);
+            data.EndingThousands("2");
 
             Assert.That(data.Text, Is.EqualTo("Две Тысячи "));
         }
@@ -56,7 +56,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingThousands("5", data.Case);
+            data.EndingThousands("5");
 
             Assert.That(data.Text, Is.EqualTo("Пять Тысяч "));
         }
@@ -67,7 +67,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingThousands("17", data.Case);
+            data.EndingThousands("17");
 
             Assert.That(data.Text, Is.EqualTo("Семнадцать Тысяч "));
         }
@@ -78,7 +78,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingThousands("30", data.Case);
+            data.EndingThousands("30");
 
             Assert.That(data.Text, Is.EqualTo("Тридцать Тысяч "));
         }
@@ -89,7 +89,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingMillions("1", data.Case);
+            data.EndingMillions("1");
 
             Assert.That(data.Text, Is.EqualTo("Миллион "));
         }
@@ -100,7 +100,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingMillions("2", data.Case);
+            data.EndingMillions("2");
 
             Assert.That(data.Text, Is.EqualTo("Миллиона "));
         }
@@ -111,7 +111,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingMillions("5", data.Case);
+            data.EndingMillions("5");
 
             Assert.That(data.Text, Is.EqualTo("Миллионов "));
         }
@@ -122,7 +122,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingBillions("1", data.Case);
+            data.EndingBillions("1");
 
             Assert.That(data.Text, Is.EqualTo("Миллиард "));
         }
@@ -133,7 +133,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingBillions("2", data.Case);
+            data.EndingBillions("2");
 
             Assert.That(data.Text, Is.EqualTo("Миллиарда "));
         }
@@ -144,7 +144,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.EndingBillions("5", data.Case);
+            data.EndingBillions("5");
 
             Assert.That(data.Text, Is.EqualTo("Миллиардов "));
         }
@@ -155,7 +155,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.FirstLevelConvert("300", data.Case);
+            data.FirstLevelConvert("300");
 
             Assert.That(data.Text, Is.EqualTo("Триста "));
         }
@@ -166,7 +166,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.FirstLevelConvert("17", data.Case);
+            data.FirstLevelConvert("17");
 
             Assert.That(data.Text, Is.EqualTo("Семнадцать "));
         }
@@ -177,7 +177,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.FirstLevelConvert("40", data.Case);
+            data.FirstLevelConvert("40");
 
             Assert.That(data.Text, Is.EqualTo("Сорок "));
         }
@@ -188,7 +188,7 @@ namespace ConvertIntToStringTest
             var data = new ConvertData();
             data.DictionaryInitialization("М", "И");
 
-            data.FirstLevelConvert("2", data.Case);
+            data.FirstLevelConvert("2");
 
             Assert.That(data.Text, Is.EqualTo("Два "));
         }
@@ -200,7 +200,7 @@ namespace ConvertIntToStringTest
             var numberSplit = new string[] { "242", "000" };
             data.DictionaryInitialization("М", "И");
 
-            data.SecondLevelConvert(numberSplit, data.Case);
+            data.SecondLevelConvert(numberSplit);
 
             Assert.That(data.Text, Is.EqualTo("Двести Сорок Две Тысячи "));
         }
@@ -212,7 +212,7 @@ namespace ConvertIntToStringTest
             var numberSplit = new string[] { "242", "000", "000" };
             data.DictionaryInitialization("М", "И");
 
-            data.ThirdLevelConvert(numberSplit, data.Case);
+            data.ThirdLevelConvert(numberSplit);
 
             Assert.That(data.Text, Is.EqualTo("Двести Сорок Два Миллиона "));
         }
@@ -224,7 +224,7 @@ namespace ConvertIntToStringTest
             var numberSplit = new string[] { "241", "000", "000", "000" };
             data.DictionaryInitialization("М", "И");
 
-            data.FourthLevelConvert(numberSplit, data.Case);
+            data.FourthLevelConvert(numberSplit);
 
             Assert.That(data.Text, Is.EqualTo("Двести Сорок Один Миллиард "));
         }
@@ -236,7 +236,7 @@ namespace ConvertIntToStringTest
             var numberString = "734";
             data.DictionaryInitialization("М", "И");
 
-            var result = data.EndingHunders(numberString, data.Case);
+            var result = data.EndingHunders(numberString);
 
             Assert.That(result == 34);
         }
@@ -248,7 +248,7 @@ namespace ConvertIntToStringTest
             var numberString = "34";
             data.DictionaryInitialization("М", "И");
 
-            var result = data.EndingHunders(numberString, data.Case);
+            var result = data.EndingHunders(numberString);
 
             Assert.That(result == 34);
         }
@@ -260,7 +260,7 @@ namespace ConvertIntToStringTest
             var numberString = "734";
             data.DictionaryInitialization("М", "И");
 
-            data.EndingHunders(numberString, data.Case);
+            data.EndingHunders(numberString);
 
             Assert.That(data.Text, Is.EqualTo("Семьсот "));
         }

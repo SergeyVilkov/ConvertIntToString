@@ -18,23 +18,23 @@ namespace ConvertIntToString
             CheckForNullOrEmpty(sGender, sCase);
             CheckForCorrectData(sGender, sCase);
             DictionaryInitialization(sGender, sCase);
+            number = CheckZeroAndNegativeNumber(number);
             var numberString = number.ToString("#,#", CultureInfo.InvariantCulture);
             var numberSplit = numberString.Split(",");
 
-            number = CheckZeroAndNegativeNumber(number, Case);
             switch (numberSplit.Count())
             {
                 case 1:
-                    FirstLevelConvert(numberSplit[0], Case);
+                    FirstLevelConvert(numberSplit[0]);
                     break;
                 case 2:
-                    SecondLevelConvert(numberSplit, Case);
+                    SecondLevelConvert(numberSplit);
                     break;
                 case 3:
-                    ThirdLevelConvert(numberSplit, Case);
+                    ThirdLevelConvert(numberSplit);
                     break;
                 case 4:
-                    FourthLevelConvert(numberSplit, Case);
+                    FourthLevelConvert(numberSplit);
                     break;
             }
 
@@ -72,80 +72,38 @@ namespace ConvertIntToString
         }
 
         #region Setting cases and genders
-        public void MaleCases(string sCase)
+        public ICases MaleCases(string sCase) => sCase switch
         {
-            switch (sCase)
-            {
-                case "И":
-                    Obj = new MNominative();
-                    break;
-                case "Р":
-                    Obj = new MGenitive();
-                    break;
-                case "Д":
-                    Obj = new MDative();
-                    break;
-                case "В":
-                    Obj = new MAccusative();
-                    break;
-                case "Т":
-                    Obj = new MInstrumental();
-                    break;
-                case "П":
-                    Obj = new MPrepositional();
-                    break;
-            }
-        }
+            "И" => Obj = new MNominative(),
+            "Р" => Obj = new MGenitive(),
+            "Д" => Obj = new MDative(),
+            "В" => Obj = new MAccusative(),
+            "Т" => Obj = new MInstrumental(),
+            "П" => Obj = new MPrepositional(),
+            _ => throw new NotImplementedException()
+        };
 
-        public void FemaleCases(string sCase)
+        public ICases FemaleCases(string sCase) => sCase switch
         {
-            switch (sCase)
-            {
-                case "И":
-                    Obj = new FNominative();
-                    break;
-                case "Р":
-                    Obj = new FGenitive();
-                    break;
-                case "Д":
-                    Obj = new FDative();
-                    break;
-                case "В":
-                    Obj = new FAccusative();
-                    break;
-                case "Т":
-                    Obj = new FInstrumental();
-                    break;
-                case "П":
-                    Obj = new FPrepositional();
-                    break;
-            }
-        }
+            "И" => Obj = new FNominative(),
+            "Р" => Obj = new FGenitive(),
+            "Д" => Obj = new FDative(),
+            "В" => Obj = new FAccusative(),
+            "Т" => Obj = new FInstrumental(),
+            "П" => Obj = new FPrepositional(),
+            _ => throw new NotImplementedException()
+        };
 
-        public void NeuterCases(string sCase)
+        public ICases NeuterCases(string sCase) => sCase switch
         {
-            switch (sCase)
-            {
-                case "И":
-                    Obj = new NNominative();
-                    break;
-                case "Р":
-                    Obj = new NGenitive();
-                    break;
-                case "Д":
-                    Obj = new NDative();
-                    break;
-                case "В":
-                    Obj = new NAccusative();
-                    break;
-                case "Т":
-                    Obj = new NInstrumental();
-                    break;
-                case "П":
-                    Obj = new NPrepositional();
-                    break;
-            }
-        }
+            "И" => Obj = new NNominative(),
+            "Р" => Obj = new NGenitive(),
+            "Д" => Obj = new NDative(),
+            "В" => Obj = new NAccusative(),
+            "Т" => Obj = new NInstrumental(),
+            "П" => Obj = new NPrepositional(),
+            _ => throw new NotImplementedException()
+        };
 
         public void GenderAndCaseSettings(string sGender, string sCase)
         {
@@ -230,131 +188,101 @@ namespace ConvertIntToString
             };
         }
 
-        public void FourthLevelConvert(string[] numberSplit, Dictionary<int, string> sCase)
+        public void FourthLevelConvert(string[] numberSplit)
         {
-            FirstLevelConvert(numberSplit[0], sCase);
-            EndingBillions(numberSplit[0], sCase);
-            FirstLevelConvert(numberSplit[1], sCase);
+            FirstLevelConvert(numberSplit[0]);
+            EndingBillions(numberSplit[0]);
+            FirstLevelConvert(numberSplit[1]);
             if (!numberSplit[1].Equals("000"))
-            {
-                EndingMillions(numberSplit[1], sCase);
-            }
-            FirstLevelConvert(numberSplit[2], sCase);
+                EndingMillions(numberSplit[1]);
+            FirstLevelConvert(numberSplit[2]);
             if (!numberSplit[2].Equals("000"))
-            {
-                EndingThousands(numberSplit[2], sCase);
-            }
-            FirstLevelConvert(numberSplit[3], sCase);
+                EndingThousands(numberSplit[2]);
+            FirstLevelConvert(numberSplit[3]);
         }
 
-        public void ThirdLevelConvert(string[] numberSplit, Dictionary<int, string> sCase)
+        public void ThirdLevelConvert(string[] numberSplit)
         {
-            FirstLevelConvert(numberSplit[0], sCase);
-            EndingMillions(numberSplit[0], sCase);
-            EndingThousands(numberSplit[1], sCase);
-            FirstLevelConvert(numberSplit[2], sCase);
+            FirstLevelConvert(numberSplit[0]);
+            EndingMillions(numberSplit[0]);
+            EndingThousands(numberSplit[1]);
+            FirstLevelConvert(numberSplit[2]);
         }
 
-        public void SecondLevelConvert(string[] numberSplit, Dictionary<int, string> sCase)
+        public void SecondLevelConvert(string[] numberSplit)
         {
-            EndingThousands(numberSplit[0], sCase);
-            FirstLevelConvert(numberSplit[1], sCase);
+            EndingThousands(numberSplit[0]);
+            FirstLevelConvert(numberSplit[1]);
         }
 
-        public void FirstLevelConvert(string numberString, Dictionary<int, string> sCase)
+        public void FirstLevelConvert(string numberString)
         {
-            var number = EndingHunders(numberString, sCase);
+            var number = EndingHunders(numberString);
             if (number > 0)
             {
                 if (number < 20)
-                    Text += $"{sCase[number]} ";
+                    Text += $"{Case[number]} ";
                 else
                 {
-                    Text += $"{sCase[number / 10 + 20]} ";
+                    Text += $"{Case[number / 10 + 20]} ";
                     if ((number % 10) > 0)
-                        Text += $"{sCase[number % 10]} ";
+                        Text += $"{Case[number % 10]} ";
                 }
             }
         }
 
-        public void EndingBillions(string text, Dictionary<int, string> sCase)
+        public string EndingBillions(string numberString) => numberString.Last() switch
         {
-            var number = int.Parse(text.Last().ToString());
+            '1' => Text += $"{Case[47]} ",
+            '2' or '3' or '4' => Text += $"{Case[48]} ",
+            _ => Text += $"{Case[49]} "
+        };
+
+        public string EndingMillions(string numberString) => numberString.Last() switch
+        {
+            '1' => Text += $"{Case[44]} ",
+            '2' or '3' or '4' => Text += $"{Case[45]} ",
+            _ => Text += $"{Case[46]} "
+        };
+
+        public void EndingThousands(string numberString)
+        {
+            var number = EndingHunders(numberString);
+            if (number <= 0) return;
             switch (number)
             {
-                case 1:
-                    Text += $"{sCase[47]} ";
+                case < 5:
+                    Text += $"{Case[number + 50]} ";
                     break;
-                case 2:
-                case 3:
-                case 4:
-                    Text += $"{sCase[48]} ";
+                case < 20:
+                    Text += $"{Case[number] + " " + Case[50]} ";
                     break;
                 default:
-                    Text += $"{sCase[49]} ";
+                    Text += $"{Case[number / 10 + 20]} ";
+                    if ((number % 10) > 0)
+                        Text += $"{Case[number % 10 + 50]} ";
+                    else Text += $"{Case[50]} ";
                     break;
             }
         }
 
-        public void EndingMillions(string text, Dictionary<int, string> sCase)
-        {
-            var number = int.Parse(text.Last().ToString());
-            switch (number)
-            {
-                case 1:
-                    Text += $"{sCase[44]} ";
-                    break;
-                case 2:
-                case 3:
-                case 4:
-                    Text += $"{sCase[45]} ";
-                    break;
-                default:
-                    Text += $"{sCase[46]} ";
-                    break;
-            }
-        }
-
-        public void EndingThousands(string numberString, Dictionary<int, string> sCase)
-        {
-            var number = EndingHunders(numberString, sCase);
-            if (number > 0)
-            {
-                switch (number)
-                {
-                    case < 5:
-                        Text += $"{sCase[number + 50]} ";
-                        break;
-                    case < 20:
-                        Text += $"{sCase[number] + " " + sCase[50]} ";
-                        break;
-                    default:
-                        Text += $"{sCase[number / 10 + 20]} ";
-                        if ((number % 10) > 0)
-                            Text += $"{sCase[number % 10 + 50]} ";
-                        else Text += $"{sCase[50]} ";
-                        break;
-                }
-            }
-        }
-
-        public int EndingHunders(string numberString, Dictionary<int, string> sCase)
+        public int EndingHunders(string numberString)
         {
             var number = int.Parse(numberString);
 
             if ((number / 100) > 0)
             {
-                Text += $"{sCase[number / 100 + 30]} ";
+                Text += $"{Case[number / 100 + 30]} ";
                 number %= 100;
             }
 
             return number;
         }
 
-        public long CheckZeroAndNegativeNumber(long number, Dictionary<int, string> sCase)
+        public long CheckZeroAndNegativeNumber(long number)
         {
             if (number == 0)
-                Text = $"{sCase[0]}";
+                Text = $"{Case[0]}";
             if (number < 0)
                 Text = $"Минус ";
 

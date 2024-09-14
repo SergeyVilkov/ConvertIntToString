@@ -5,7 +5,7 @@
         public static void Main()
         {
             var data = new ConvertData();
-            var number = 154323;
+            var number = -154323;
             var sGender = "М";
             var sCase = "Т";
 
